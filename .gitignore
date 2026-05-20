@@ -1,0 +1,12 @@
+.DS_Store
+*.swp
+*.swo
+
+# tmux plugins (managed by tpm)
+tmux/.config/tmux/plugins/
+
+# zsh plugins (managed by plugin manager)
+zsh/.zsh/plugins/
+
+# Claude Code local settings
+**/.claude/

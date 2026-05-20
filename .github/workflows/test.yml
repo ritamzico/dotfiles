@@ -1,0 +1,23 @@
+name: Test install
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  install:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: dotfiles
+
+      - name: Move repo to ~/dotfiles
+        run: mv "$GITHUB_WORKSPACE/dotfiles" "$HOME/dotfiles"
+
+      - name: Run install script
+        run: bash "$HOME/dotfiles/install.sh"
+        env:
+          CI: true
