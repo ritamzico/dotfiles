@@ -17,7 +17,7 @@ Personal macOS dotfiles managed with [GNU Stow](https://www.gnu.org/software/sto
 ## Install
 
 ```bash
-git clone <your-repo-url> ~/dotfiles
+git clone https://github.com/ritamzico/dotfiles ~/dotfiles
 bash ~/dotfiles/install.sh
 ```
 
@@ -26,7 +26,7 @@ bash ~/dotfiles/install.sh
 1. Restart terminal (or `source ~/.zshrc`)
 2. Open `nvim` — Lazy installs plugins automatically
 3. In nvim run `:MasonUpdate` to install LSP servers
-4. Open tmux, press `<prefix>I` to install tpm plugins
+4. Open tmux, press `Ctrl + S I` to install tpm plugins
 5. Run `bat cache --build` to load bat themes
 
 ## Adding a new config
