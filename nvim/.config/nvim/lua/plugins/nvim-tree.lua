@@ -5,6 +5,10 @@ return {
         require("nvim-tree").setup({
             disable_netrw = true,
             hijack_netrw = true,
+            hijack_directories = {
+                enable = true,
+                auto_open = false,
+            },
             view = {
                 width = 35,
                 side = "left",

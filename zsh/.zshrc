@@ -23,5 +23,13 @@ export FZF_DEFAULT_COMMAND="fd --type f --hidden --exclude .git"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_ALT_C_COMMAND="fd --type d --hidden --exclude .git"
 
+tm() {
+  if tmux has-session 2>/dev/null; then
+    tmux attach
+  else
+    tmux new-session
+  fi
+}
+
 fcd() { cd "$(FZF_DEFAULT_COMMAND='' fzf --walker=dir,hidden --walker-skip=.git,node_modules,__pycache__)" }
 fv() { nvim "$(FZF_DEFAULT_COMMAND='' fzf --walker=file,hidden --walker-skip=.git,node_modules,__pycache__)" }

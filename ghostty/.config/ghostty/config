@@ -15,8 +15,11 @@ background-blur = 20
 
 cursor-style = bar
 cursor-style-blink = true
+mouse-scroll-multiplier = 1
 
 shell-integration = detect
 shell-integration-features = cursor,sudo,title
 
 scrollback-limit = 10000
+
+confirm-close-surface = false
