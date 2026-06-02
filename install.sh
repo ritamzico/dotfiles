@@ -32,7 +32,7 @@ brew install \
 
 if [ -z "$CI" ]; then
     echo "==> Installing apps..."
-    brew install --cask ghostty
+    brew install --cask ghostty karabiner-elements raycast
 
     echo "==> Installing fonts..."
     brew install --cask font-jetbrains-mono-nerd-font
