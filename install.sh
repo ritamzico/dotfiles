@@ -64,7 +64,7 @@ echo "==> Stowing dotfiles..."
 # Remove files that oh-my-zsh or other installers may have created
 rm -f ~/.zshrc
 cd "$DOTFILES"
-stow -t ~ zsh oh-my-posh bat eza ghostty nvim tmux
+stow -t ~ zsh oh-my-posh bat eza ghostty nvim tmux karabiner raycast
 
 echo ""
 echo "Done. Manual steps remaining:"

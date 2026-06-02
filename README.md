@@ -13,6 +13,8 @@ Personal macOS dotfiles managed with [GNU Stow](https://www.gnu.org/software/sto
 | `ghostty` | `.config/ghostty/` |
 | `bat` | `.config/bat/` |
 | `eza` | `.config/eza/` |
+| `karabiner` | `.config/karabiner/` |
+| `raycast` | `.config/raycast/` |
 
 ## Install
 
